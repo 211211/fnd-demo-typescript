@@ -15,12 +15,13 @@ npm install --save fnd-demo-v2
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'fnd-demo-v2'
+import MyComponent, {Button} from 'fnd-demo-v2'
 import 'fnd-demo-v2/dist/index.css'
+import 'fnd-demo-v2/dist/output.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Button label={"Button"} color={'primary'} size={'larger'} />
   }
 }
 ```
